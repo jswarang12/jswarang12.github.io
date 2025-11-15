@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Swarang Joshi",
+    "email": "swarang.joshi@research.iiit.ac.in",
     "phone": "",
     "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "summary": "Currently employed at IIIT Hyderabad. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Hyderabad, India",
       "countryCode": "US",
       "region": ""
     },
@@ -31,35 +31,7 @@
     ]
   },
   "work": [],
-  "education": [
-    {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
-    }
-  ],
+  "education": [],
   "skills": [],
   "languages": [],
   "interests": [],
@@ -92,6 +64,13 @@
       "releaseDate": "2024-02-17",
       "website": "http://academicpages.github.io/files/paper3.pdf",
       "summary": "This paper is about fixing template issue #693."
+    },
+    {
+      "name": "Paper Title Number 5, with math $$E=mc^2$$",
+      "publisher": "GitHub Journal of Bugs",
+      "releaseDate": "2024-02-17",
+      "website": "http://academicpages.github.io/files/paper3.pdf",
+      "summary": "This paper is about a famous math equation, $$E=mc^2$$"
     }
   ],
   "presentations": [
