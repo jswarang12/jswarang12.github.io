@@ -2,7 +2,7 @@
 # Publications
 # ---------------------------------------------------------------------------
 # To add a new paper, copy one of the entries under `entries:` below, paste it
-# as a new list item, and fill in the fields. No new files or pages needed —
+# as a new list item, and fill in the fields. No new files or pages needed;
 # it will show up on /publications/ (and in the CV) automatically.
 #
 # Fields:
@@ -17,6 +17,8 @@
 #   excerpt    - one or two sentence summary shown in the list
 #   paperurl   - link to the PDF / arXiv / DOI page (optional)
 #   citation   - full recommended citation string shown under the excerpt
+#   highlight  - true to feature this paper in "Selected work" on the home
+#                page (optional, keep it to 1-2 papers)
 # ---------------------------------------------------------------------------
 
 entries:
@@ -29,6 +31,7 @@ entries:
     excerpt: "A model-merging approach for adapting multilingual language models to code-mixed NLP tasks."
     paperurl: ""
     citation: 'P. Kodali, V. Shivkumar, S. Joshi, M. Choudhary, P. Kumaraguru. (2025). "Adapting Multilingual Models to Code-Mixed Tasks via Model Merging." <i>CODS-IKDD 2025</i>.'
+    highlight: true
 
   - title: "The 'aftermath' of compounds: Investigating Compounds and their Semantic Representations"
     authors: "S. Joshi"
@@ -49,3 +52,4 @@ entries:
     excerpt: "A scene-graph-boosted hybrid-fusion architecture for predicting the veracity of multi-modal misinformation."
     paperurl: "https://arxiv.org/abs/2410.15517"
     citation: 'S. Joshi*, S. Mavani*, et al. (2024). "SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation Veracity Prediction." <i>arXiv:2410.15517</i>.'
+    highlight: true

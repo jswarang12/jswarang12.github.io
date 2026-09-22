@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+# Updates
+# ---------------------------------------------------------------------------
+# A short running log shown on the About page. To add one, copy an entry
+# below, paste it above the others (most recent first), and fill it in.
+#
+# Fields:
+#   date  - short label, e.g. "Aug 2026" or "2025" (required, just a display string)
+#   text  - one-line update, markdown links allowed (required)
+# ---------------------------------------------------------------------------
+
+entries:
+  - date: "May 2026"
+    text: "Joined **Fujitsu Research of India** as an AI Research Intern, working on memory management for self-evolving multi-agent systems."
+
+  - date: "Jan 2026"
+    text: "Helped develop and teach a session on **Computational Psycholinguistics** for 50+ students at IIIT Hyderabad."
+
+  - date: "May 2025"
+    text: "Started as a **Visiting Researcher** at DACS, Maastricht University, on the EU Horizon project AMBROSIA."
+
+  - date: "2025"
+    text: "Two papers accepted: [CODS-IKDD 2025](/publications/) on model merging for code-mixed tasks, and IJCNLP-AACL 2025 (SRW) on compound semantics."
+
+  - date: "2025"
+    text: "Served as Program Chair for the **MT Summit 2025** in Geneva, Switzerland."
+
+  - date: "Oct 2024"
+    text: "Posted [SceneGraMMi](https://arxiv.org/abs/2410.15517) to arXiv, a scene-graph-boosted approach to multi-modal misinformation detection."

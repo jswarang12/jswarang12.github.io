@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<article class="section-page">
+  <div class="section-page__inner">
+    <header class="section-page__header">
+      <h1 class="section-page__title">{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="section-page__subtitle">{{ page.subtitle }}</p>{% endif %}
+      {% if page.pdf_url %}
+        <a class="btn-download" href="{{ page.pdf_url | prepend: base_path }}">
+          <i class="fas fa-fw fa-file-arrow-down" aria-hidden="true"></i> Download PDF
+        </a>
+      {% endif %}
+    </header>
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,111 @@
+/* ==========================================================================
+   PERSONALIZATION LAYER
+   Hybrid sidebar (smaller, lighter, icon-row links) + updates timeline.
+   Kept as a separate partial, imported last, so it only overrides -
+   nothing here duplicates the base theme's structural rules.
+   ========================================================================== */
+
+/* Smaller, lighter avatar */
+.author__avatar img {
+  max-width: 110px;
+
+  @include breakpoint($large) {
+    padding: 3px;
+  }
+}
+
+/* Location / employer as a single muted meta line instead of list items */
+.author__meta {
+  margin: 0.35em 0 0.75em;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.author__meta-dot {
+  margin: 0 0.4em;
+}
+
+/* Icon-only social row: compact, horizontal, with native title tooltips */
+.author__urls-wrapper {
+  .author__urls.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65em;
+
+    li {
+      white-space: normal;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.9em;
+      height: 1.9em;
+      margin-bottom: 0;
+      border-radius: 50%;
+      border: 1px solid var(--global-border-color);
+      color: var(--global-text-color);
+      transition: $global-transition;
+
+      &:hover {
+        color: #fff;
+        background: var(--global-link-color);
+        border-color: var(--global-link-color);
+        text-decoration: none;
+      }
+    }
+
+    .icon-pad-right {
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+   Updates timeline (About page)
+   ========================================================================== */
+
+.updates-timeline {
+  margin: 1.5em 0 2em;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--global-border-color);
+}
+
+.updates-timeline__item {
+  position: relative;
+  padding: 0 0 1.1em 1.2em;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0.4em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--global-link-color);
+  }
+}
+
+.updates-timeline__date {
+  display: block;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 600;
+  color: var(--global-link-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15em;
+}
+
+.updates-timeline__text {
+  margin: 0;
+}

@@ -1,19 +1,18 @@
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if include.pub.paperurl and include.pub.paperurl != "" %}
-        <a href="{{ include.pub.paperurl }}">{{ include.pub.title }}</a>
-      {% else %}
-        {{ include.pub.title }}
-      {% endif %}
-    </h2>
-    <p class="page__meta">{{ include.pub.authors }}</p>
-    <p>Published in <i>{{ include.pub.venue }}</i>, {{ include.pub.year }}</p>
-    {% if include.pub.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ include.pub.excerpt | markdownify }}</p>{% endif %}
-    {% if include.pub.citation %}
-      <p>Recommended citation: {{ include.pub.citation }}
-      {% if include.pub.paperurl and include.pub.paperurl != "" %}<br /><a href="{{ include.pub.paperurl }}">Download Paper</a>{% endif %}
-      </p>
+<article class="card">
+  <h3 class="card__title">
+    {% if include.pub.paperurl and include.pub.paperurl != "" %}
+      <a href="{{ include.pub.paperurl }}">{{ include.pub.title }}</a>
+    {% else %}
+      {{ include.pub.title }}
     {% endif %}
-  </article>
-</div>
+  </h3>
+  <p class="card__meta">{{ include.pub.authors }}</p>
+  <p class="card__venue"><i>{{ include.pub.venue }}</i> &middot; {{ include.pub.year }}</p>
+  {% if include.pub.excerpt %}<p class="card__body">{{ include.pub.excerpt | markdownify }}</p>{% endif %}
+  {% if include.pub.citation %}
+    <p class="card__citation">{{ include.pub.citation }}</p>
+  {% endif %}
+  {% if include.pub.paperurl and include.pub.paperurl != "" %}
+    <a class="card__link" href="{{ include.pub.paperurl }}">Read paper</a>
+  {% endif %}
+</article>

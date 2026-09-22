@@ -1,22 +1,20 @@
 ---
-layout: archive
+layout: section
 title: "CV"
+pdf_url: /files/Swarang_Joshi_CV.pdf
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 {% include base_path %}
 
-Education
-=========
+## Education
 
 * **B.Tech in Computer Science + M.S. in Computational Linguistics**
   * IIIT Hyderabad, 2022 - 2027 (expected)
   * Relevant Coursework: Advanced NLP, Data Structures & Algorithms, Probability & Statistics
 
-Research Experience
-===================
+## Research Experience
 
 * **Visiting Researcher** (May 2025 - Dec 2025)
 
@@ -29,10 +27,9 @@ Research Experience
   * Conducting research on Responsible AI, focusing on codemixing, robustness, AI Alignment and multi-modal systems
   * Advisors: Dr. Radhika Mamidi and Dr. Ponnurangam Kumaraguru
 
-Tech Experience
-===============
+## Tech Experience
 
-* **AI Research Intern** (May 2025 - Aug 2025)
+* **AI Research Intern** (May 2026 - Aug 2026)
 
   * Fujitsu Research of India (FRIPL), Bangalore, India
   * Worked with Dr. Siddartha Reddy and Dr. Ishan Jindal on improving memory management for self-evolving multi-agent systems
@@ -48,28 +45,24 @@ Tech Experience
   * Developed a scalable RAG-based chatbot pipeline to streamline information retrieval
   * Implemented Vision Language Models (VLMs) to automate container damage detection, improving assessment accuracy by 20%
 
-Skills
-======
+## Skills
 
 * **Languages:** Python, C, SQL
 * **AI/ML:** PyTorch, LangGraph, NLTK, Scikit-learn, Hugging Face
 * **Tools:** Git, Flask, Docker, SQL Databases
 * **Concepts:** GenAI, RAG, Responsible AI, ML, DSA
 
-Publications
-============
+## Publications
 
 <ul>{% assign cv_pubs = site.data.publications.entries | sort: 'date' | reverse %}{% for pub in cv_pubs %}
     {% include publication-entry-cv.html pub=pub %}
   {% endfor %}</ul>
 
-Key Research Projects
-=====================
+## Key Research Projects
 
 <p>See the <a href="{{ base_path }}/research/">Research</a> page for full details of current and past projects.</p>
 
-Teaching & Mentoring
-====================
+## Teaching & Mentoring
 
 * **Invited Talk and Mentorship**, Computational Psycholinguistics, IIIT Hyderabad (2026)
 
@@ -90,8 +83,7 @@ Teaching & Mentoring
 * **Photography & Videography Team**, Felicity Fest, IIIT Hyderabad (2022 - 2023)
 * **Volunteer**, Mental Health Support Group, IIIT Hyderabad (2024 - 2025)
 
-Grants & Awards
-================
+## Grants & Awards
 
 * **Research Distinctions:** ACM IKDD Travel Grant for CODS 2025, IIIT Research Grant for AACL 2025, IndoML 2024 (ML graduate scholars)
 * **Competition Awards:** Amazon ML Challenge 2025 (Rank 56 among 75,000+ participants), Multiple Gold Medals in SOF Olympiads

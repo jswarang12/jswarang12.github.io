@@ -1,0 +1,11 @@
+{% if site.data.updates.entries %}
+  {% unless include.heading == false %}<h2>Updates</h2>{% endunless %}
+  <ul class="updates-timeline">
+    {% for update in site.data.updates.entries %}
+      <li class="updates-timeline__item">
+        <span class="updates-timeline__date">{{ update.date }}</span>
+        <p class="updates-timeline__text">{{ update.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

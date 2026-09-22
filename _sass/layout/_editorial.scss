@@ -1,0 +1,530 @@
+/* ==========================================================================
+   EDITORIAL DESIGN SYSTEM
+   A from-scratch single-column layout that replaces the minimal-mistakes
+   sidebar/masthead/archive structure for the pages that use the new
+   `home` and `section` layouts. Imported last so it wins on cascade;
+   nothing here is required by pages still on the old `archive`/`single`
+   layouts (portfolio, tag/category archives, the markdown guide, etc.),
+   which keep working exactly as before.
+   ========================================================================== */
+
+/* The old theme reserved fixed space for its fixed masthead + absolutely
+   positioned footer. Our nav and footer are both in normal document flow. */
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page__footer {
+  display: none;
+}
+
+/* ==========================================================================
+   Shared tokens
+   ========================================================================== */
+
+$content-width: 700px;
+$content-width-wide: 880px;
+
+/* ==========================================================================
+   Top navigation
+   ========================================================================== */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.site-nav__inner {
+  max-width: $content-width-wide;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.site-nav__brand {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.15em;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.75em;
+  flex-wrap: wrap;
+}
+
+.site-nav__link {
+  font-family: $sans-serif;
+  font-size: 0.95em;
+  color: var(--global-text-color-light) !important;
+  text-decoration: none !important;
+  transition: $global-transition;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+
+  &:hover,
+  &.is-active {
+    color: var(--global-text-color) !important;
+    border-bottom-color: var(--global-link-color);
+  }
+}
+
+.site-nav__theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 1px solid var(--global-border-color);
+  background: transparent;
+  color: var(--global-text-color);
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--global-link-color);
+    color: var(--global-link-color);
+  }
+}
+
+.site-nav__burger-toggle {
+  display: none;
+}
+
+.site-nav__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--global-text-color);
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav__burger {
+    display: flex;
+  }
+
+  .site-nav__links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px solid var(--global-border-color);
+  }
+
+  .site-nav__inner {
+    flex-wrap: wrap;
+  }
+
+  .site-nav__burger-toggle:checked ~ .site-nav__links {
+    display: flex;
+  }
+}
+
+/* ==========================================================================
+   Hero (home / about page)
+   ========================================================================== */
+
+.hero {
+  padding: 4.5em 1.5em 3em;
+  text-align: center;
+}
+
+.hero__inner {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.hero__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--global-bg-color);
+  outline: 1px solid var(--global-border-color);
+  margin-bottom: 1.25em;
+}
+
+.hero__name {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 2.75em;
+  line-height: 1.1;
+  margin: 0 0 0.3em;
+}
+
+.hero__tagline {
+  font-family: $sans-serif;
+  font-size: 1.15em;
+  color: var(--global-text-color-light);
+  max-width: 34em;
+  margin: 0 auto 0.6em;
+  line-height: 1.5;
+}
+
+.hero__meta {
+  font-family: $sans-serif;
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+  margin: 0 0 1.5em;
+}
+
+.hero__meta-dot {
+  margin: 0 0.4em;
+}
+
+/* ==========================================================================
+   Social row (icon-only, used in hero)
+   ========================================================================== */
+
+.social-row {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1em;
+    height: 2.1em;
+    border-radius: 50%;
+    border: 1px solid var(--global-border-color);
+    color: var(--global-text-color);
+    text-decoration: none !important;
+    transition: $global-transition;
+
+    &:hover {
+      color: #fff;
+      background: var(--global-link-color);
+      border-color: var(--global-link-color);
+    }
+  }
+}
+
+/* ==========================================================================
+   Tag row (research interests, shown on Home)
+   ========================================================================== */
+
+.tag-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0.3em;
+  margin: 0 0 2.5em;
+  padding: 0;
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  li {
+    font-family: $sans-serif;
+    font-size: 0.9em;
+    color: var(--global-text-color-light);
+
+    &:not(:last-child)::after {
+      content: "\00b7";
+      margin: 0 0.6em;
+    }
+  }
+}
+
+.prose__more {
+  font-family: $sans-serif;
+  font-size: 0.92em;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+/* ==========================================================================
+   Generic section page (CV / Research / Publications / Talks / Teaching)
+   ========================================================================== */
+
+.section-page {
+  padding: 2.5em 1.5em 5em;
+}
+
+.section-page__inner {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.section-page__header {
+  margin-bottom: 2.5em;
+}
+
+.section-page__title {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 2.4em;
+  margin: 0 0 0.3em;
+}
+
+.section-page__subtitle {
+  font-family: $sans-serif;
+  color: var(--global-text-color-light);
+  font-size: 1.05em;
+  margin: 0;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1.2em;
+  padding: 0.55em 1.1em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  font-family: $sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--global-link-color);
+    color: var(--global-link-color) !important;
+  }
+}
+
+.prose {
+  font-family: $sans-serif;
+  line-height: 1.7;
+
+  > p:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose__lede {
+  font-size: 1.05em;
+  color: var(--global-text-color-light);
+}
+
+.section-heading {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 2.5em 0 1em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.prose h2 {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 2.2em 0 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose ul {
+  padding-left: 1.3em;
+}
+
+.prose li {
+  margin-bottom: 0.4em;
+}
+
+.prose li strong:first-child {
+  font-family: $serif;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Card grid (research + publication entries)
+   ========================================================================== */
+
+.card-grid {
+  display: grid;
+  gap: 1.25em;
+  margin-bottom: 2em;
+}
+
+.card {
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  padding: 1.5em 1.7em;
+  transition: $global-transition;
+  background: var(--global-bg-color);
+
+  &:hover {
+    border-color: var(--global-link-color);
+  }
+}
+
+.card__title {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  margin: 0 0 0.4em;
+
+  a {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+
+    &:hover {
+      color: var(--global-link-color) !important;
+    }
+  }
+}
+
+.card__meta {
+  font-family: $sans-serif;
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.3em;
+}
+
+.card__venue {
+  font-family: $monospace;
+  font-size: 0.8em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.7em;
+}
+
+.card__body {
+  font-family: $sans-serif;
+  font-size: 0.97em;
+  margin: 0 0 0.7em;
+}
+
+.card__citation {
+  font-family: $sans-serif;
+  font-size: 0.82em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.7em;
+}
+
+.card__list {
+  font-family: $sans-serif;
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+  padding-left: 1.2em;
+  margin: 0 0 0.7em;
+}
+
+.card__link {
+  font-family: $sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--global-link-color) !important;
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+/* ==========================================================================
+   Updates timeline
+   ========================================================================== */
+
+.updates-timeline {
+  margin: 1.5em 0 2em;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--global-border-color);
+}
+
+.updates-timeline__item {
+  position: relative;
+  padding: 0 0 1.1em 1.2em;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0.4em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--global-link-color);
+  }
+}
+
+.updates-timeline__date {
+  display: block;
+  font-family: $monospace;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: var(--global-link-color);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.15em;
+}
+
+.updates-timeline__text {
+  margin: 0;
+  font-family: $sans-serif;
+}
+
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+
+.site-footer {
+  border-top: 1px solid var(--global-border-color);
+  margin-top: 3em;
+  padding: 2em 1.5em;
+  text-align: center;
+}
+
+.site-footer__inner {
+  max-width: $content-width-wide;
+  margin: 0 auto;
+}
+
+.site-footer__note,
+.site-footer__copyright {
+  font-family: $sans-serif;
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  margin: 0.2em 0;
+}

@@ -1,0 +1,26 @@
+{% include base_path %}
+
+<header class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ base_path }}/">{{ site.title }}</a>
+
+    <input type="checkbox" id="site-nav__burger-toggle" class="site-nav__burger-toggle">
+    <label for="site-nav__burger-toggle" class="site-nav__burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav__links">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        <a href="{{ domain }}{{ link.url }}" class="site-nav__link{% if page.url == link.url %} is-active{% endif %}">{{ link.title }}</a>
+      {% endfor %}
+      <button type="button" id="theme-toggle" class="site-nav__theme-toggle" aria-label="Toggle color theme">
+        <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </div>
+</header>

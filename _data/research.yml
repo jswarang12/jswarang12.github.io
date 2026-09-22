@@ -16,22 +16,24 @@
 # ---------------------------------------------------------------------------
 
 entries:
-  - title: "APRICOT: A Novel Reasoning Framework for Small Language Models"
+  - title: "Dependency Distance in Code-Mixing"
     status: current
     period: "2025 - Present"
-    summary: "A training-free framework to enhance the logical and numerical reasoning of small language models."
-    details:
-      - "Technologies: Python, PyTorch, Hugging Face"
+    summary: "Studying dependency distance in code-mixed text, and what it reveals about the syntactic processing cost of switching languages mid-sentence."
     link: ""
     link_text: ""
 
-  - title: "Impersonation: Investigating LLMs' Capabilities"
+  - title: "A Multilingual fMRI/EEG Dataset for Indian English, Hindi, and Telugu"
     status: current
     period: "2025 - Present"
-    summary: "Investigating how large language models combine stylistic elements with factual information."
-    details:
-      - "Collaboration between Indiana University and IIIT Hyderabad"
-      - "Supervisor: Dr. Jisun An"
+    summary: "Building a neuroimaging dataset spanning Indian English, Hindi, and Telugu, for studying language processing in the brain."
+    link: ""
+    link_text: ""
+
+  - title: "Reasoning Failures in Vision-Language Models"
+    status: current
+    period: "2025 - Present"
+    summary: "Investigating where and why vision-language models break down on multi-step reasoning tasks."
     link: ""
     link_text: ""
 

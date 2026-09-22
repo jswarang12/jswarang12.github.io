@@ -1,0 +1,6 @@
+{% assign tag_list = include.tags | split: "," %}
+<ul class="tag-row">
+  {% for tag in tag_list %}
+    <li>{{ tag | strip }}</li>
+  {% endfor %}
+</ul>

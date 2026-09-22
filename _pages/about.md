@@ -1,20 +1,26 @@
 ---
 permalink: /
-title: "About"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+title: "Home"
+layout: home
 ---
 
-I'm a B.Tech + M.S. by Research student in Computer Science and Computational Linguistics at [IIIT Hyderabad](https://www.iiit.ac.in/), where I work with [Precog](https://precog.iiit.ac.in/) and LTRC on natural language processing, vision-language models, and AI alignment, advised by Prof. Radhika Mamidi and Prof. Ponnurangam Kumaraguru.
+I'm a B.Tech + M.S. by Research student in Computer Science and Computational Linguistics at [IIIT Hyderabad](https://www.iiit.ac.in/), working on NLP, vision-language models, and AI alignment with [Precog](https://precog.iiit.ac.in/) and LTRC. In 2025 I was a visiting researcher at [Maastricht University](https://www.maastrichtuniversity.nl/), applying ML to sustainable agriculture under the EU Horizon project AMBROSIA.
 
-I've worked as a visiting researcher at the [Dept. of Advanced Computing Sciences, Maastricht University](https://www.maastrichtuniversity.nl/), working with Dr. Vageesh Saxena and Prof. Christopher Brewster on applying machine learning and multi-modal data to crop yield prediction, as part of the EU Horizon project AMBROSIA.
+{% include tag-row.html tags="NLP,Vision-Language Models,AI Alignment,Code-Mixing,Multimodal Learning,Responsible AI" %}
 
-My research interests sit at the intersection of NLP, multi-modal learning, and responsible AI — recent work spans code-mixed language modeling, compound semantics, and misinformation detection. I've also spent time in industry, working on Graphs and Multi-Agent Systems at Fujitsu Research of India.
+## Selected work
 
-Outside research, I care about mentoring and community — I've taught, reviewed, and helped run programs at IIIT Hyderabad, IIT Madras, and international venues like the MT Summit.
+<div class="card-grid">
+  {% assign highlights = site.data.publications.entries | where: "highlight", true %}
+  {% for pub in highlights %}
+    {% include publication-entry.html pub=pub %}
+  {% endfor %}
+</div>
 
-You can find my full background on the [CV](/cv/) page, and my papers on the [publications](/publications/) page. Feel free to reach out via [email](mailto:swarang.joshi@research.iiit.ac.in) or [LinkedIn](https://www.linkedin.com/in/jswarang12/).
+<p class="prose__more"><a href="{{ base_path }}/publications/">See all publications</a> &nbsp;&middot;&nbsp; <a href="{{ base_path }}/research/">See all projects</a></p>
 
+## Updates
 
+{% include updates-timeline.html heading=false %}
+
+<p class="prose__more"><a href="{{ base_path }}/about/">More about me</a></p>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<section class="hero">
+  <div class="hero__inner">
+    <img class="hero__avatar" src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ site.author.name }}">
+    <h1 class="hero__name">{{ site.author.name }}</h1>
+    <p class="hero__tagline">{{ site.author.bio }}</p>
+    {% if site.author.location or site.author.employer %}
+      <p class="hero__meta">
+        {% if site.author.location %}{{ site.author.location }}{% endif %}
+        {% if site.author.location and site.author.employer %}<span class="hero__meta-dot">&middot;</span>{% endif %}
+        {% if site.author.employer %}{{ site.author.employer }}{% endif %}
+      </p>
+    {% endif %}
+    {% include social-row.html %}
+  </div>
+</section>
+
+<article class="section-page">
+  <div class="section-page__inner">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
