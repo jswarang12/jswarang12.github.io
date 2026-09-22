@@ -6,7 +6,7 @@ layout: home
 
 I'm a B.Tech + M.S. by Research student in Computer Science and Computational Linguistics at [IIIT Hyderabad](https://www.iiit.ac.in/), working on NLP, vision-language models, and AI alignment with [Precog](https://precog.iiit.ac.in/) and LTRC. In 2025 I was a visiting researcher at [Maastricht University](https://www.maastrichtuniversity.nl/), applying ML to sustainable agriculture under the EU Horizon project AMBROSIA.
 
-{% include tag-row.html tags="NLP,Vision-Language Models,AI Alignment,Code-Mixing,Multimodal Learning,Responsible AI" %}
+{% include tag-row.html tags="NLP,Computational Social Science,Graphs,Applied ML,Multimodal Systems,Cognitive Science,Responsible AI" %}
 
 ## Selected work
 
