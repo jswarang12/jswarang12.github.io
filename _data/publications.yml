@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# Publications
+# ---------------------------------------------------------------------------
+# To add a new paper, copy one of the entries under `entries:` below, paste it
+# as a new list item, and fill in the fields. No new files or pages needed —
+# it will show up on /publications/ (and in the CV) automatically.
+#
+# Fields:
+#   title      - paper title (required)
+#   authors    - author list as it should be displayed, e.g. "S. Joshi, et al."
+#   venue      - where it was published/submitted, e.g. "CODS-IKDD 2025"
+#   year       - publication year (required, used for sorting)
+#   date       - full date "YYYY-MM-DD", used for sorting when set (optional,
+#                falls back to Jan 1 of `year` if omitted)
+#   category   - one of: manuscripts (Journal Articles), conferences
+#                (Conference Papers), preprints (Preprints)
+#   excerpt    - one or two sentence summary shown in the list
+#   paperurl   - link to the PDF / arXiv / DOI page (optional)
+#   citation   - full recommended citation string shown under the excerpt
+# ---------------------------------------------------------------------------
+
+entries:
+  - title: "Adapting Multilingual Models to Code-Mixed Tasks via Model Merging"
+    authors: "P. Kodali, V. Shivkumar, S. Joshi, M. Choudhary, P. Kumaraguru"
+    venue: "CODS-IKDD 2025"
+    year: 2025
+    date: 2025-01-01
+    category: conferences
+    excerpt: "A model-merging approach for adapting multilingual language models to code-mixed NLP tasks."
+    paperurl: ""
+    citation: 'P. Kodali, V. Shivkumar, S. Joshi, M. Choudhary, P. Kumaraguru. (2025). "Adapting Multilingual Models to Code-Mixed Tasks via Model Merging." <i>CODS-IKDD 2025</i>.'
+
+  - title: "The 'aftermath' of compounds: Investigating Compounds and their Semantic Representations"
+    authors: "S. Joshi"
+    venue: "IJCNLP-AACL 2025 (Student Research Workshop)"
+    year: 2025
+    date: 2025-01-02
+    category: conferences
+    excerpt: "An investigation into how compound words are semantically represented in language models."
+    paperurl: ""
+    citation: 'S. Joshi. (2025). "The &apos;aftermath&apos; of compounds: Investigating Compounds and their Semantic Representations." <i>IJCNLP-AACL 2025 (SRW)</i>.'
+
+  - title: "SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation Veracity Prediction"
+    authors: "S. Joshi*, S. Mavani*, et al."
+    venue: "arXiv:2410.15517"
+    year: 2024
+    date: 2024-10-15
+    category: preprints
+    excerpt: "A scene-graph-boosted hybrid-fusion architecture for predicting the veracity of multi-modal misinformation."
+    paperurl: "https://arxiv.org/abs/2410.15517"
+    citation: 'S. Joshi*, S. Mavani*, et al. (2024). "SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation Veracity Prediction." <i>arXiv:2410.15517</i>.'

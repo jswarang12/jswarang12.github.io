@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Research Projects
+# ---------------------------------------------------------------------------
+# To add a new project, copy one of the entries under `entries:` below, paste
+# it as a new list item, and fill in the fields. It will show up on
+# /research/ automatically, grouped by status.
+#
+# Fields:
+#   title         - project title (required)
+#   status        - "current" or "past" (required, controls grouping)
+#   period        - e.g. "2024 - Present" or "2023 - 2024" (optional)
+#   summary       - one or two sentence description (required)
+#   details       - list of bullet points, e.g. collaborators, results (optional)
+#   link          - URL to a paper/repo/writeup for this project (optional)
+#   link_text     - label for the link, defaults to "Read more" (optional)
+# ---------------------------------------------------------------------------
+
+entries:
+  - title: "APRICOT: A Novel Reasoning Framework for Small Language Models"
+    status: current
+    period: "2025 - Present"
+    summary: "A training-free framework to enhance the logical and numerical reasoning of small language models."
+    details:
+      - "Technologies: Python, PyTorch, Hugging Face"
+    link: ""
+    link_text: ""
+
+  - title: "Impersonation: Investigating LLMs' Capabilities"
+    status: current
+    period: "2025 - Present"
+    summary: "Investigating how large language models combine stylistic elements with factual information."
+    details:
+      - "Collaboration between Indiana University and IIIT Hyderabad"
+      - "Supervisor: Dr. Jisun An"
+    link: ""
+    link_text: ""
+
+  - title: "Adapting Multilingual Models to Code-Mixed Tasks via Model Merging"
+    status: past
+    period: "2024 - 2025"
+    summary: "Investigating effective utilization of unlabeled code-mixed datasets and monolingual resources via model merging."
+    details:
+      - "Collaboration with Max Planck Institute, MBZUAI, and IIIT Hyderabad"
+      - "Accepted at CODS-IKDD 2025"
+    link: ""
+    link_text: ""
+
+  - title: "SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation"
+    status: past
+    period: "2024"
+    summary: "A scene-graph-boosted hybrid-fusion approach for multi-modal misinformation veracity prediction."
+    link: "https://arxiv.org/abs/2410.15517"
+    link_text: "arXiv:2410.15517"

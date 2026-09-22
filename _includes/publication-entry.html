@@ -1,0 +1,19 @@
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if include.pub.paperurl and include.pub.paperurl != "" %}
+        <a href="{{ include.pub.paperurl }}">{{ include.pub.title }}</a>
+      {% else %}
+        {{ include.pub.title }}
+      {% endif %}
+    </h2>
+    <p class="page__meta">{{ include.pub.authors }}</p>
+    <p>Published in <i>{{ include.pub.venue }}</i>, {{ include.pub.year }}</p>
+    {% if include.pub.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ include.pub.excerpt | markdownify }}</p>{% endif %}
+    {% if include.pub.citation %}
+      <p>Recommended citation: {{ include.pub.citation }}
+      {% if include.pub.paperurl and include.pub.paperurl != "" %}<br /><a href="{{ include.pub.paperurl }}">Download Paper</a>{% endif %}
+      </p>
+    {% endif %}
+  </article>
+</div>

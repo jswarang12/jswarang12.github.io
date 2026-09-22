@@ -3,129 +3,128 @@
     "name": "Swarang Joshi",
     "email": "swarang.joshi@research.iiit.ac.in",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at IIIT Hyderabad. Short biography for the left-hand sidebar",
+    "website": "https://jswarang12.github.io",
+    "summary": "B.Tech + M.S. by Research student in Computer Science and Computational Linguistics at IIIT Hyderabad. Working on NLP, VLMs, and AI Alignment.",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Hyderabad, India",
-      "countryCode": "US",
+      "countryCode": "IN",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=KAUbK_gAAAAJ&hl=en"
       },
       {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "network": "LinkedIn",
+        "username": "jswarang12",
+        "url": "https://www.linkedin.com/in/jswarang12/"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "jswarang12",
+        "url": "https://github.com/jswarang12"
       }
     ]
   },
-  "work": [],
-  "education": [],
-  "skills": [],
+  "work": [
+    {
+      "company": "Fujitsu Research of India",
+      "position": "AI Research Intern",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-01",
+      "summary": "Worked with Dr. Rahul Mishra and Dr. Ishan Jindal on improving memory management for self-evolving Multi-Agent Systems."
+    },
+    {
+      "company": "StartupWind SmallBiz Pvt. Ltd.",
+      "position": "AI/ML Intern",
+      "startDate": "2025-05-01",
+      "endDate": "2025-07-01",
+      "summary": "Awarded Best Engineering Performer (Q2 2025). Engineered a production-ready LangGraph AI agent for personalized generation and designed a novel GenAI evaluation framework achieving 98.5% consistency."
+    },
+    {
+      "company": "EOS Pvt. Ltd.",
+      "position": "AI/ML Intern",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "Developed a scalable RAG-based chatbot pipeline to streamline information retrieval and implemented Vision Language Models (VLMs) to automate container damage detection, improving assessment accuracy by 20%."
+    }
+  ],
+  "education": [
+    {
+      "institution": "International Institute of Information Technology, Hyderabad",
+      "area": "Computer Science and Computational Linguistics",
+      "studyType": "B.Tech + M.S. by Research",
+      "startDate": "2022-10-01",
+      "endDate": "2027-04-01"
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "keywords": ["Python", "C", "SQL"] },
+    { "name": "AI/ML", "keywords": ["PyTorch", "LangGraph", "NLTK", "Scikit-learn", "Hugging Face"] },
+    { "name": "Tools", "keywords": ["Git", "Flask", "Docker", "SQL Databases"] },
+    { "name": "Concepts", "keywords": ["GenAI", "RAG", "Responsible AI", "ML", "DSA"] }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Adapting Multilingual Models to Code-Mixed Tasks via Model Merging",
+      "publisher": "CODS-IKDD 2025",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "P. Kodali, V. Shivkumar, S. Joshi, M. Choudhary, P. Kumaraguru."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "The 'aftermath' of compounds: Investigating Compounds and their Semantic Representations",
+      "publisher": "IJCNLP-AACL 2025 (SRW)",
+      "releaseDate": "2025-01-02",
+      "website": "",
+      "summary": "S. Joshi."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    },
-    {
-      "name": "Paper Title Number 5, with math $$E=mc^2$$",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about a famous math equation, $$E=mc^2$$"
+      "name": "SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation Veracity Prediction",
+      "publisher": "arXiv:2410.15517",
+      "releaseDate": "2024-10-15",
+      "website": "https://arxiv.org/abs/2410.15517",
+      "summary": "S. Joshi*, S. Mavani*, et al."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Computational Psycholinguistics",
+      "event": "Invited Talk and Mentorship, IIIT Hyderabad",
+      "date": "2026-01-01",
+      "location": "Hyderabad, India",
+      "description": "Helped develop and teach a session on Psycholinguistics for 50+ students."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "ML for Sustainable Agriculture",
+      "event": "AMBROSIA Consortium Plenary Meeting, KEDEA",
+      "date": "2025-01-01",
+      "location": "Thessaloniki, Greece",
+      "description": "Delivered a talk on ML for Sustainable Agriculture."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Computational Psycholinguistics",
+      "institution": "IIIT Hyderabad",
+      "date": "2026-01-01",
+      "role": "Invited session and mentorship",
+      "description": "Helped develop and teach a session on Psycholinguistics for 50+ students."
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Responsible & Safe AI Summer School",
+      "institution": "IIT Madras",
+      "date": "2024-01-01",
+      "role": "Teaching Assistant and Host",
+      "description": "ACM India Summer School on Responsible & Safe AI."
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Swarang Joshi"
 title_separator          : "-"
 name                     : &name "Swarang Joshi"
@@ -26,7 +26,7 @@ author:
   avatar           : "pic.jpeg"
   name             : "Swarang Joshi"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "CS + Computational Linguistics @ IIIT Hyderabad. NLP, VLMs, and AI Alignment."
   location         : "Hyderabad, India"
   employer         : "IIIT Hyderabad"
   uri              : # URL
@@ -84,9 +84,11 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
+  preprints:
+    title: 'Preprints'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

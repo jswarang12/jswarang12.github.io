@@ -18,12 +18,12 @@ Education
 Research Experience
 ===================
 
-* **Visiting Researcher** (Aug 2025 - Present)
+* **Visiting Researcher** (May 2025 - Dec 2025)
 
   * DACS, Maastricht University, Netherlands
-  * Applying ML for sustainable agriculture and food safety within the EU Horizon Europe Project Ambrosia
-  * Advisors: Dr. Christopher Brewster and Dr. Vageesh Saxena
-* **Undergraduate Researcher** (Feb 2024 - Present)
+  * Applying ML and integrating multi-modal data for improving crop yield prediction within the EU Horizon Project AMBROSIA
+  * Advisors: Dr. Vageesh Saxena and Prof. Christopher Brewster
+* **Research Assistant / Undergraduate Researcher** (Apr 2024 - Present)
 
   * Precog - LTRC, IIIT Hyderabad, India
   * Conducting research on Responsible AI, focusing on codemixing, robustness, AI Alignment and multi-modal systems
@@ -32,7 +32,11 @@ Research Experience
 Tech Experience
 ===============
 
-* **AI/ML Intern** (May 2025 - Aug 2025)
+* **AI Research Intern** (May 2025 - Aug 2025)
+
+  * Fujitsu Research of India (FRIPL), Bangalore, India
+  * Worked with Dr. Siddartha Reddy and Dr. Ishan Jindal on improving memory management for self-evolving multi-agent systems
+* **AI/ML Intern** (May 2025 - Jul 2025)
 
   * StartupWind SmallBiz Pvt. Ltd., Pune, India
   * Awarded Best Engineering Performer (Q2 2025)
@@ -55,44 +59,41 @@ Skills
 Publications
 ============
 
-<ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
+<ul>{% assign cv_pubs = site.data.publications.entries | sort: 'date' | reverse %}{% for pub in cv_pubs %}
+    {% include publication-entry-cv.html pub=pub %}
   {% endfor %}</ul>
 
 Key Research Projects
 =====================
 
-* **SceneGraMMi: Scene Graph-boosted Hybrid-fusion for Multi-Modal Misinformation**
+<p>See the <a href="{{ base_path }}/research/">Research</a> page for full details of current and past projects.</p>
 
-  * Scene graph-based approach for multi-modal misinformation veracity prediction
-  * Co-authored with Siddharth Mavani et al. (arXiv:2410.15517, 2024)
-* **Mixing Data, Not Just Languages**
+Teaching & Mentoring
+====================
 
-  * Collaboration with Max Planck Institute, MBZUAI, IIIT Hyderabad
-  * Investigating effective utilization of unlabeled code-mixed datasets and monolingual resources
-  * Accepted at CODS-IKDD 2025
-* **APRICOT: A Novel Reasoning Framework for Small Language Models**
+* **Invited Talk and Mentorship**, Computational Psycholinguistics, IIIT Hyderabad (2026)
 
-  * Training-free framework to enhance logical and numerical reasoning of small LMs
-  * Technologies: Python, PyTorch, Hugging Face
-* **Impersonation: Investigating LLMs' Capabilities**
+  * Helped develop and teach a session on Psycholinguistics for 50+ students
+* **Invited Talk**, Ambrosia Consortium, KEDEA, Thessaloniki, Greece (2025)
 
-  * Indiana University and IIIT Hyderabad collaboration
-  * Investigating how LLMs combine stylistic elements with factual information
-  * Supervisor: Dr. Jisun An
+  * Delivered a talk on ML for Sustainable Agriculture at the AMBROSIA Plenary Meeting
+* **Program Chair**, MT Summit 2025, Geneva, Switzerland
 
-Service and Leadership
+  * Served as a program chair and reviewer for the Machine Translation Summit 2025
+* **Reviewer**, ACL 2025 and ICML AI4Math Workshop 2025
+* **Teaching Assistant and Host**, ACM India Summer School on Responsible & Safe AI, IIT Madras (2024)
+
+<!-- Service and Leadership
 ======================
 
-* **Program Chair**, MT Summit 2025
-* **Teaching Assistant & Host**, ACM School on Responsible AI - IIT Madras (2024)
-* **Reviewer** for ACL SRW 2025, ICML AI4MATH 2025
+* **Photography Head**, Pentaprism Club, IIIT Hyderabad (2022 - 2024)
+* **Photography & Videography Team**, Felicity Fest, IIIT Hyderabad (2022 - 2023)
+* **Volunteer**, Mental Health Support Group, IIIT Hyderabad (2024 - 2025)
 
-Achievements
-============
+Grants & Awards
+================
 
-* AIR 1 in IPM Jain Scholarship
-* 99+ percentile in JEE Mains, MHTCET
-* AIR 10 JEE Mains B.Plan
-* Multiple Gold Medals in SOF Olympiads
-* Cleared RMO (Regional Mathematical Olympiad)
+* **Research Distinctions:** ACM IKDD Travel Grant for CODS 2025, IIIT Research Grant for AACL 2025, IndoML 2024 (ML graduate scholars)
+* **Competition Awards:** Amazon ML Challenge 2025 (Rank 56 among 75,000+ participants), Multiple Gold Medals in SOF Olympiads
+* 99+ percentile in JEE Mains, MHTCET; AIR 10 in JEE Mains B.Plan
+* AIR 1 in IPM Jain Scholarship -->

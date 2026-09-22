@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign projects = site.data.research.entries %}
+{% assign current_projects = projects | where: 'status', 'current' %}
+{% assign past_projects = projects | where: 'status', 'past' %}
+
+{% if current_projects.size > 0 %}
+  <h2>Current Projects</h2><hr />
+  {% for project in current_projects %}
+    {% include research-entry.html project=project %}
+  {% endfor %}
+{% endif %}
+
+{% if past_projects.size > 0 %}
+  <h2>Past Projects</h2><hr />
+  {% for project in past_projects %}
+    {% include research-entry.html project=project %}
+  {% endfor %}
+{% endif %}

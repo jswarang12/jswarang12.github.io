@@ -1,0 +1,23 @@
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if include.project.link and include.project.link != "" %}
+        <a href="{{ include.project.link }}">{{ include.project.title }}</a>
+      {% else %}
+        {{ include.project.title }}
+      {% endif %}
+    </h2>
+    {% if include.project.period %}<p class="page__meta">{{ include.project.period }}</p>{% endif %}
+    {% if include.project.summary %}<p class="archive__item-excerpt" itemprop="description">{{ include.project.summary | markdownify }}</p>{% endif %}
+    {% if include.project.details %}
+      <ul>
+        {% for detail in include.project.details %}
+          <li>{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if include.project.link and include.project.link != "" %}
+      <p><a href="{{ include.project.link }}">{{ include.project.link_text | default: "Read more" }}</a></p>
+    {% endif %}
+  </article>
+</div>
